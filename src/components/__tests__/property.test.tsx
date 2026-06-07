@@ -1,9 +1,7 @@
 import { describe, it, expect } from 'vitest';
-import { render, screen, cleanup } from '@testing-library/react';
+import { render, cleanup } from '@testing-library/react';
 import * as fc from 'fast-check';
 import { Playing } from '../Playing';
-import { PostMatch } from '../PostMatch';
-import { MatchEndPayload } from '../../types';
 
 describe('Property: Board rendering consistency', () => {
   it('renders any valid board state without error', () => {

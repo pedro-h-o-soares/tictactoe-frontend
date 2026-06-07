@@ -1,7 +1,5 @@
 import { useCallback, useEffect, useReducer } from 'react';
-import useWebSocketLib from 'react-use-websocket';
-const useWebSocket = useWebSocketLib.default;
-const { ReadyState } = useWebSocketLib;
+import useWebSocket, { ReadyState } from 'react-use-websocket';
 import type { GameState, MatchEndPayload, Mark, Phase } from '../types';
 import { createInitialState, loadStoredUserId, storeUsername, storeUserId } from '../types';
 
